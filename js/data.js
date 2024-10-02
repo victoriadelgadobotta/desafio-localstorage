@@ -4,6 +4,7 @@ let datosGuardados = localStorage.getItem("datosIngresados");
 
 if (datosGuardados) {
     data.textContent = datosGuardados;
+    localStorage.removeItem("datosIngresados");
 } else {
     data.textContent = "Por el momento no tenemos datos para mostrar, regrese mas tarde!";
     data.style.color = "red";
